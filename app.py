@@ -6,7 +6,8 @@ import matplotlib.pyplot as plt
 import matplotlib
 import platform
 
-plt.rc('font', famliy = "Nanum Gothic")
+plt.rc('font', family="Nanum Gothic")
+
 
 
 # 한글 설정 및 페이지 설정
