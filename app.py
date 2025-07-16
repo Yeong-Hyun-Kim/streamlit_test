@@ -1,5 +1,4 @@
 
-# import koreanize_matplotlib
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -20,7 +19,6 @@ plt.rcParams['axes.unicode_minus'] = False
 
 
 # 한글 설정 및 페이지 설정
-# koreanize_matplotlib.koreanize()
 st.set_page_config(page_title="시니어 마이데이터 분석 및 예적금 유도", layout="wide")
 st.title("💳 시니어 마이데이터 고객 분석 + 예·적금 제안 대시보드")
 
