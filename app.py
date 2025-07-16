@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -23,7 +22,7 @@ st.set_page_config(page_title="시니어 마이데이터 분석 및 예적금 �
 st.title("💳 시니어 마이데이터 고객 분석 + 예·적금 제안 대시보드")
 
 # --- 데이터 로드 및 전처리 ---
-df = pd.read_csv("sss.csv")
+df = pd.read_csv("streamlit_test\sss.csv")
 
 # 월수령연금 계산 (연금 총액을 12개월로 나눔)
 df['월수령연금'] = df['연금'] / 12
