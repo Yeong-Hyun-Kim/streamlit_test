@@ -4,6 +4,20 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import matplotlib.pyplot as plt
+import matplotlib
+import platform
+
+# 한글 폰트 설정
+if platform.system() == 'Windows':
+    matplotlib.rc('font', family='Malgun Gothic')
+elif platform.system() == 'Darwin':  # macOS
+    matplotlib.rc('font', family='AppleGothic')
+else:  # Linux/Streamlit Cloud
+    matplotlib.rc('font', family='NanumGothic')  # 따로 설치 필요
+
+plt.rcParams['axes.unicode_minus'] = False
+
 
 # 한글 설정 및 페이지 설정
 koreanize_matplotlib.koreanize()
