@@ -6,15 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 import platform
 
-# 한글 폰트 설정
-if platform.system() == 'Windows':
-    matplotlib.rc('font', family='Malgun Gothic')
-elif platform.system() == 'Darwin':  # macOS
-    matplotlib.rc('font', family='AppleGothic')
-else:  # Linux/Streamlit Cloud
-    matplotlib.rc('font', family='NanumGothic')  # 따로 설치 필요
-
-plt.rcParams['axes.unicode_minus'] = False
+plt.rc('font', famliy = "Nanum Gothic")
 
 
 # 한글 설정 및 페이지 설정
